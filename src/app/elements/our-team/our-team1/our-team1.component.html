@@ -1,0 +1,41 @@
+<div class="section-full small-device  p-t80 bg-gray">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <div class="container">
+              
+
+                  <!-- TITLE START -->
+        <div class="section-head text-left">
+            <h4 class="text-primary text-uppercase wt-title-small">{{sectionData.section_title}}</h4>
+            <h2 class="text-uppercase font-45 font-weight-500 m-b5">{{sectionData.section_heading}}</h2>
+        </div>
+        <!-- TITLE END --> 
+       
+
+        <!-- IMAGE CAROUSEL START -->
+        <div class="row">
+            
+                <!-- COLUMNS 1 -->
+                <div class="col-md-4 col-sm-6  col-xs-6 col-xs-100pc m-t15 m-b90"  *ngFor="let team of sectionData.team">
+                    <div class="wt-team-one">
+                        <div class="wt-team-media">
+                            <img src="assets/images/our-team5/{{team.image}}" alt="">
+                       
+                            <div class="social-overlay">
+                              <div class="team-social-center">
+                                    <ul class="team-social-icon">
+                                        <li *ngFor="let social of team.social_link "><a title="{{social.title}}" href="{{social.link}}" class="fa {{social.icon_class}}"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                                                                  
+                        </div>
+                        <div class="wt-team-info text-center p-tb20 p-lr50">
+                            <h4 class="wt-team-title text-uppercase font-weight-600">{{team.name}}</h4>
+                            <p class="m-b10">{{team.role}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,34 @@
+<div class="section-full small-device p-b50  bg-gray">
+
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <div class="container">
+            
+                <!-- IMAGE CAROUSEL START -->
+        <div class="section-content clearfix">
+          <div class="top-half-section">
+              <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12"  *ngFor = "let item of sectionData.items">
+                        <div class="wt-box m-b30">
+                            <div class="wt-media  hover-box-style-1">
+                                <img src="assets/images/gallery/portrait-2/{{item.image}}" alt="">
+                                <div class="hover-box-content">
+                                <div class="wt-icon-box-wraper p-a20">
+                                        <div class="icon-lg text-primary m-b15">
+                                            <span class="icon-cell text-primary"><i class="{{item.icon_class}}"></i></span>
+                                        </div>
+                                        <div class="icon-content text-black">
+                                            <h4 class="wt-tilte text-uppercase font-weight-600 m-b20"><a routerLink="/{{item.read_more_link}}">{{item.title}}</a></h4>
+                                            <p>{{item.description}}</p>
+                                            <a routerLink="/{{item.read_more_link}}" class="site-button-link text-primary"><span>{{item.read_more_text}}</span></a>
+                                        </div>                                        
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </ng-template>
+</div> 

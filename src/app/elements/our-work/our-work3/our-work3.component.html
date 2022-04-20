@@ -1,0 +1,48 @@
+<div class="section-full small-device  p-tb80 bg-gray">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+      <div class="container">
+              
+                  <!-- TITLE START -->
+                  <div class="section-head text-left">
+                    <h4 class="text-primary text-uppercase wt-title-small">{{sectionData.section_title}}</h4>
+                      <h2 class="text-uppercase font-45 font-weight-500 m-b5">{{sectionData.section_heading}}</h2>
+                  </div>
+                  <!-- TITLE END -->  
+                                 
+      </div>
+      <div class="container-fluid">   
+          <!-- IMAGE CAROUSEL START -->
+          <div class="section-content">
+              <!-- <div class="owl-carousel owl-carousel-filter2  owl-btn-vertical-center"> -->
+              <owl-carousel-o [options]="customOptions" class="owl-carousel-1 owl-carousel-filter2-1  owl-btn-vertical-center">
+                  <ng-template carouselSlide *ngFor = "let item of sectionData.items">
+                    <!-- COLUMNS 1 --> 
+                    <div class="item fadingcol building-col">
+                        <div class="line-filter-outer">
+
+                             <img src="assets/images/gallery/portrait-2/{{item.image}}" alt="">
+                            
+                            <div class="hover-effect-1">
+                                <div class="hover-effect-content text-white">
+                                  <h4 class="m-tb0 h-category">{{item.heading}}</h4>
+                                    <p>{{item.description}}</p>
+                                </div>
+                            </div>                                     
+                           
+                            <div class="line-filter">
+                                <div class="filter-content  bg-white p-a30">
+                                    <h4 class="m-t0 m-b20 text-uppercase"><a routerLink="/{{item.read_more_link}}">{{item.title}}</a></h4>
+                                    <a href="/{{item.read_more_link}}" class="v-button text-uppercase">{{item.read_more_text}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  </ng-template>
+                </owl-carousel-o>
+
+              <!-- </div> -->
+          </div>
+      </div>
+  </ng-template>  
+ </div>

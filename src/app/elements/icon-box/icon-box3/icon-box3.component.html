@@ -1,0 +1,23 @@
+<div class="section-full step-blocks  p-lr50">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+                <!-- IMAGE CAROUSEL START -->
+    <div class="section-content clearfix">
+      <div class="col-md-12 no-col-gap">
+          <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc step-number-block"  *ngFor = "let item of sectionData.items">
+                    <div class="wt-icon-box-wraper  p-lr30  p-b50  p-t50 {{item.container_class}}">
+                    <div class="step-number text-gray">{{item.count}}</div>
+                        <div class="icon-lg text-primary m-b15">
+                            <span class="icon-cell text-white"><i class="{{item.icon_class}}"></i></span>
+                        </div>
+                        <div class="icon-content text-white">
+                            <h4 class="wt-tilte text-uppercase font-weight-600 m-b20">{{item.title}}</h4>
+                            <p>{{item.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </ng-template>
+</div>   

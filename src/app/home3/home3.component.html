@@ -1,0 +1,62 @@
+<div class="page-wraper footer-fixed"> 
+       	
+        <!-- HEADER START -->
+        <app-header3></app-header3>
+        <!-- HEADER END -->
+        
+        <!-- CONTENT START -->
+        <div class="page-content">        
+            <!-- SLIDER START -->
+            <app-slider3></app-slider3>
+            <!-- SLIDER END -->
+            
+            <!-- ABOUT COMPANY -->
+            <app-icon-box2 [data]="icon_section"></app-icon-box2>
+            <!-- ABOUT COMPANY END -->
+
+                                    
+            <!-- WELCOME SECTION START -->
+            <app-specialization3 [data]="company_staticties_section"></app-specialization3>
+            <!-- WELCOME  SECTION END -->
+  
+            <!-- CLIENT LOGO SECTION START -->
+            <app-clients [data]="clients"></app-clients>
+            
+            <!-- CLIENT LOGO  SECTION End -->              
+            
+            <!-- LATEST PRJECTS SLIDER START -->
+            <app-our-work3 [data]="our_work_section"></app-our-work3>
+            <!-- LATEST PRJECTS SLIDER END --> 
+
+            <!-- OUR TEAM START -->
+            <app-our-team2 [data]="our_team"></app-our-team2> 
+            <!-- OUR TEAM END -->
+ 
+            <!-- OUR VIDEO START -->
+            <app-call-to-action1></app-call-to-action1> 
+            <!-- OUR VIDEO END --> 
+            
+            <!-- TESTIMONIALS SECTION START -->
+            <app-testimonial1 [data]="testimonials"></app-testimonial1>
+            <!-- TESTIMONIALS SECTION END --> 
+                        
+            <!-- OUR BLOG START -->
+            <app-blog1 [data]="blogs"></app-blog1>
+            <!-- OUR BLOG END --> 
+
+                                                 
+
+        </div>
+        
+        <!-- CONTENT END -->
+        
+        <!-- FOOTER START -->
+        <app-footer1></app-footer1>
+        <!-- FOOTER END -->
+
+        <!-- BUTTON TOP START -->
+		<app-scroll-to-top></app-scroll-to-top>     
+    </div>
+ 
+<!-- LOADING AREA START ===== -->
+<app-loading></app-loading>

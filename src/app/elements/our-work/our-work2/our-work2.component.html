@@ -1,0 +1,72 @@
+<div class="section-full small-device  p-tb80 bg-gray">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <div class="container">
+            
+                <!-- TITLE START -->
+                <div class="section-head text-left">
+                  <h4 class="text-primary text-uppercase wt-title-small">{{sectionData.section_title}}</h4>
+                    <h2 class="text-uppercase font-45 font-weight-500 m-b5">{{sectionData.section_heading}}</h2>
+                </div>
+                <!-- TITLE END -->
+                    <div class="row">
+                        <div class="portfolio-wrap mfp-gallery">
+                            <div class="masonry-item col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="line-filter-outer2 m-b30">
+
+                                     <img src="assets/images/gallery/portrait/{{sectionData.items[0].image}}" alt="">
+                                     <div class="hover-effect-2">
+                                        <div class="hover-effect-content2 text-white">
+                                            <h4 class="m-tb0 h-category">{{sectionData.items[0].heading}}</h4>
+                                            <h4 class="m-t0 m-b20 text-uppercase"><a routerLink="/{{sectionData.items[0].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[0].title}}</a></h4>
+                                            <p>{{sectionData.items[0].description}}</p>
+                                            <a routerLink="/{{sectionData.items[0].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[0].read_more_text}}</a>
+                                        </div>
+                                    </div>    
+                                
+                                </div>
+                            </div>
+                            <div class="masonry-item col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="line-filter-outer2 m-b30">
+                                     <img src="assets/images/gallery/portrait-half/{{sectionData.items[1].image}}" alt="">
+                                     <div class="hover-effect-2">
+                                        <div class="hover-effect-content2 text-white">
+                                            <h4 class="m-tb0 h-category">{{sectionData.items[1].heading}}</h4>
+                                            <h4 class="m-t0 m-b20 text-uppercase"><a routerLink="/{{sectionData.items[1].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[1].title}}</a></h4>
+                                            <a routerLink="/{{sectionData.items[1].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[1].read_more_text}}</a>
+                                        </div>
+                                    </div>    
+                                </div>                                    
+                            </div>
+                            <div class="masonry-item col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <div class="line-filter-outer2 m-b30">
+                                     <img src="assets/images/gallery/portrait-half/{{sectionData.items[2].image}}" alt="">
+                                     <div class="hover-effect-2">
+                                        <div class="hover-effect-content2 text-white">
+                                            <h4 class="m-tb0 h-category">{{sectionData.items[2].heading}}</h4>
+                                            <h4 class="m-t0 m-b20 text-uppercase"><a routerLink="/{{sectionData.items[2].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[2].title}}</a></h4>
+                                            <a routerLink="/{{sectionData.items[2].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[2].read_more_text}}</a>
+                                        </div>
+                                    </div>    
+                                </div>   
+                            </div>
+                            <div class="masonry-item col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="line-filter-outer2 m-b30">
+
+                                     <img src="assets/images/gallery/landscape-half/{{sectionData.items[3].image}}" alt="">
+                                     <div class="hover-effect-2">
+                                        <div class="hover-effect-content2 text-white">
+                                            <h4 class="m-tb0 h-category">{{sectionData.items[3].heading}}</h4>
+                                            <h4 class="m-t0 m-b20 text-uppercase"><a routerLink="/{{sectionData.items[1].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[3].title}}</a></h4>
+                                            <p>{{sectionData.items[3].description}}</p>
+                                            <a routerLink="/{{sectionData.items[3].read_more_link}}" class="site-button-link white text-uppercase">{{sectionData.items[3].read_more_text}}</a>
+                                        </div>
+                                    </div>    
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>                     
+                               
+    </div>
+  </ng-template>
+</div>

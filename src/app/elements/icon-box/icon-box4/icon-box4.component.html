@@ -1,0 +1,58 @@
+<div class="section-full small-device  p-tb80 bg-white">
+    <ng-template ngFor let-sectionData [ngForOf]="data">
+      <div class="container">
+          <!-- IMAGE CAROUSEL START -->
+          <div class="section-content">
+            <div class="col-md-12">
+                <div class="row  no-col-gap">
+                      <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc"  *ngFor = "let item of sectionData.items">
+                          <div class="wt-icon-box-wraper center p-lr30  p-b50 p-t50 bdr-1 bdr-solid bdr-gray-light hover-border-outer hover-border">
+                              <div class="icon-lg text-primary m-b15">
+                                  <span class="icon-cell text-primary"><i class="{{item.icon_class}}"></i></span>
+                              </div>
+                              <div class="icon-content">
+                                  <h4 class="wt-tilte text-uppercase font-weight-600 m-b20">{{item.title}}</h4>
+                                  <p>{{item.description}}</p>
+                              </div>
+                          </div>
+                      </div>                          
+                      <!-- <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
+                          <div class="wt-icon-box-wraper center p-lr30  p-b50 p-t50 bdr-1 bdr-solid bdr-gray-light hover-border-outer hover-border">
+                              <div class="icon-lg text-primary m-b15">
+                                  <span class="icon-cell text-primary"><i class="flaticon-skyline"></i></span>
+                              </div>
+                              <div class="icon-content">
+                                  <h4 class="wt-tilte text-uppercase font-weight-600 m-b20">Architecture</h4>
+                                  <p>There are many variations of pass ages of Ipsum.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
+                          <div class="wt-icon-box-wraper center p-lr30  p-b50 p-t50 bdr-1 bdr-solid bdr-gray-light hover-border-outer hover-border">
+                              <div class="icon-lg text-primary m-b15">
+                                  <span class="icon-cell text-primary"><i class="flaticon-sketch "></i></span>
+                              </div>
+                              <div class="icon-content">
+                                  <h4 class="wt-tilte text-uppercase font-weight-600 m-b20">Planing</h4>
+                                  <p>There are many variations of pass ages of Ipsum.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-xs-6 col-xs-100pc">
+                          <div class="wt-icon-box-wraper center p-lr30  p-b50 p-t50 bdr-1 bdr-solid bdr-gray-light hover-border-outer hover-border">
+                              <div class="icon-lg text-primary m-b15">
+                                  <span class="icon-cell text-primary"><i class="flaticon-crane"></i></span>
+                              </div>
+                              <div class="icon-content">
+                                  <h4 class="wt-tilte text-uppercase font-weight-600 m-b20">Construction</h4>
+                                  <p>There are many variations of pass ages of Ipsum.</p>
+                              </div>
+                          </div>
+                      </div> -->
+                                                                        
+                  </div>
+              </div>
+          </div>
+      </div>
+    </ng-template>
+</div>

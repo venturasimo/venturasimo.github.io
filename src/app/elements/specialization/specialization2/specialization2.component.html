@@ -1,0 +1,41 @@
+<div class="section-full small-device  p-tb80 bg-white  bg-no-repeat bg-bottom-right" style="background-image:url(assets/images/background/bg-4.jpg);">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <div class="container">
+    
+        <div class="section-content">
+
+          <div class="row">
+              <div class="col-md-5 col-sm-12">
+                  <div class="why-choose-half-section">
+                      <div class="wt-media">
+                      <img src="assets/images/people-1.png" alt="">
+                        </div>
+                        
+                   </div>
+                </div>                        
+            <div class="col-md-7 col-sm-12">
+                    <!-- TITLE START -->
+                    <div class="section-head text-left">
+                        <h4 class="text-primary text-uppercase wt-title-small">{{sectionData.section_title}}</h4>
+                        <h2 class="text-uppercase font-45 font-weight-500 m-b5">{{sectionData.section_heading}}</h2>
+                        <p>{{sectionData.section_description}}</p>
+                    </div>
+                    <!-- TITLE END -->                              
+            <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <ul class="list-angle-right">
+                            <li  *ngFor="let item of sectionData.ul_points_style1">{{item.title}}</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                          <ul class="list-angle-right">
+                              <li  *ngFor="let item of sectionData.ul_points_style2">{{item.title}}</li>
+                          </ul>
+                      </div>                                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </ng-template>  
+</div>

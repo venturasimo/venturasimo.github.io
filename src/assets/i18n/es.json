@@ -1,0 +1,79 @@
+{
+    "venturaSimo" : "Ventura Simó",
+    "inici" : "Inicio",
+    "home" : {
+        "especialitzacio" : "Nuestra especialización",
+        "perque" : "¿Por qué elegirnos?",
+        "items" : {
+            "01" : {
+                "titol": "Nuestra experiencia nos avala",
+                "descripcio" : "Los más de quince años al mundo de la construcción nos avalan."
+            },
+            "02" : {
+                "titol": "Asesoría sobre su reforma",
+                "descripcio" : "Le asesoramos durante todo el camino porque tome siempre la mejor opción."
+            },
+            "03" : {
+                "titol": "Primero la seguridad de todos",
+                "descripcio" : "Trabajamos siempre manteniendo la máxima seguridad tanto por vosotros, vuestro espacio y por nosotros."
+            },
+            "04" : {
+                "titol": "La mejor garantía que pueda tener",
+                "descripcio" : "Trabajamos para ofreceros la mejor garantía utilizando siempre los mejores materiales de la construcción."
+            }
+        }
+    },
+    "contacte" : {
+        "infoContacte" : "Información de contacto",
+        "numeroTelefon" : "Número de telefono",
+        "adrecaCorreuElectronic" : "Dirección de correo electronico",
+        "adreca" : "Dirección"
+    },
+    "peu" : {
+        "titol" : "Realizamos construcciones y reformas en:",
+        "montsia" : "Montsiá",
+        "municipisMontsia" : {
+            "laRapita" : "La Rápita",
+            "laSenia" : "La Cenia",
+            "masBarberants" : "Mas de Barberáns",
+            "santJaume" : "San Jaime de Enveija",
+            "santaBarbara" : "Santa Bárbara"
+        },
+        "baixEbre" : "Bajo Ebro",
+        "municipisBaixEbre" : {
+            "aldea" : "La Aldea",
+            "alfara" : "Alfara",
+            "ametlla" : "La Ametlla de Mar",
+            "ampolla" : "La Ampolla",
+            "camarles" : "Camarles",
+            "deltebre" : "Deltebre",
+            "perello" : "Perelló",
+            "roquetes" : "Roquetas",
+            "tortosa" : "Tortosa"
+        },
+        "baixMaestrat" : "Bajo Maestrazgo",
+        "municipisBaixMaestrat" : {
+            "alcala" : "Alcalá de Chivert",
+            "benicarlo" : "Benicarló",
+            "calig" : "Cálig",
+            "laJana" : "La Jana",
+            "penyiscola" : "Peñíscola",
+            "rosell" : "Rosell",
+            "santJordi" : "San Jorge",
+            "santMateu" : "San Mateo",
+            "santRafelRiu" : "Sant Rafael del Rio",
+            "traiguera" : "Traiguera",
+            "vinaros" : "Vinaroz"
+        }
+
+    },
+    "cookie": {
+        "header": "Galetes utilitzades al lloc web!",
+        "message": "Aquest lloc web utilitza galetes per assegurar-vos que obteniu la millor experiència al nostre lloc web.",
+        "dismiss": "Ho tinc!",
+        "allow": "Permet galetes",
+        "deny": "Declina",
+        "link": "Més informació",
+        "policy": "Política de galetes"
+    }
+}

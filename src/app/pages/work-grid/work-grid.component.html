@@ -1,0 +1,64 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+        
+  <!-- SECTION CONTENT START -->
+        <div class="section-full small-device  p-tb80 bg-gray">
+          <div class="container">
+                <!-- PAGINATION START -->
+                <div class="filter-wrap p-tb50 text-center">
+                    <ul class="masonry-filter link-style  text-uppercase">
+                            <li class="active"><a data-filter="*" href="#">All</a></li>
+                            <li><a data-filter=".cat-1" href="#">House</a></li>
+                            <li><a data-filter=".cat-2" href="#">Building</a></li>
+                            <li><a data-filter=".cat-3" href="#">Office</a></li>
+                            <li><a data-filter=".cat-4" href="#">Garden</a></li>
+                            <li><a data-filter=".cat-5" href="#">Interior</a></li>
+                    </ul>
+                </div>
+                <!-- PAGINATION END -->
+                
+                <!-- GALLERY CONTENT START -->
+                 <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
+                    <!-- COLUMNS 1 -->
+                    <div class="masonry-item {{item.category}} col-md-4 col-sm-6 m-b30" *ngFor = "let item of news_grid_section">
+                        <div class="wt-box  work-hover-content">
+                            <div class="wt-thum-bx  img-center-icon">
+                                <img src="assets/images/gallery/{{item.blog_image}}" alt="">
+                            </div>
+                            
+                          <div class="wt-info bg-white p-a20">
+                                <h4 class="wt-tilte text-uppercase font-weight-600 m-b10 m-t0"><a routerLink="/{{item.read_more_link}}">{{item.post_title}}</a></h4>
+                                <p class="m-b0">{{item.title}}</p>
+                            </div>                                 
+                        </div>
+                                  
+                    </div>                                 
+                 </div>
+                <!-- GALLERY CONTENT END -->                    
+          </div>
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+
+    <!-- BUTTON TOP START -->
+<app-scroll-to-top></app-scroll-to-top>
+    
+</div>
+
+<!-- LOADING AREA START ===== -->
+<app-loading></app-loading>

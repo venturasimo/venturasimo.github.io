@@ -1,0 +1,93 @@
+{
+    "venturaSimo" : "Ventura Simó",
+    "inici" : "Inici",
+    "home" : {
+        "especialitzacio" : "La nostra especialització",
+        "perque" : "Per què escollir-nos?",
+        "items" : {
+            "01" : {
+                "titol": "La nostra experiència ens avala",
+                "descripcio" : "Els més de quinze anys al món de la construcció ens avalen."
+            },
+            "02" : {
+                "titol": "Assessoria sobre la seva reforma",
+                "descripcio" : "L'assessorem durant tot el camí perquè prengui sempre la millor opció."
+            },
+            "03" : {
+                "titol": "Primer la seguretat de tots",
+                "descripcio" : "Treballem sempre mantenint la màxima seguretat tant per vosaltres, el vostre espai i per nosaltres."
+            },
+            "04" : {
+                "titol": "La millor garantia que pugui tenir",
+                "descripcio" : "Treballem per oferir-vos la millor garantia utilitzant sempre els millors materials de la construcció."
+            }
+        }
+    },
+    "contacte" : {
+        "contactar" : "Contactar",
+        "infoContacte" : "Informació de contacte",
+        "numeroTelefon" : "Número de telèfon",
+        "telefon" : "699 99 00 11",
+        "adrecaCorreuElectronic" : "Adreça de correu electrònic",
+        "correuElectronic" : "ventura85@gmail.com",
+        "adreca" : "Adreça",
+        "adrecaCarrer" : "C/Enrique Granados, 25 2-A",
+        "adrecaPoblacio" : "43530 - Alcanar (Tarragona)"
+    },
+    "peu" : {
+        "titol" : "Realitzem construccions i reformes a:",
+        "montsia" : "Montsià",
+        "municipisMontsia" : {
+            "alcanar" : "Alcanar",
+            "amposta" : "Amposta",
+            "freginals" : "Freginals",
+            "laGalera" : "La Galera",
+            "laRapita" : "La Ràpita",
+            "laSenia" : "La Sénia",
+            "godall" : "Godall",
+            "masBarberants" : "Mas de Barberants",
+            "masdenverge" : "Masdenverge",
+            "santJaume" : "Sant Jaume d'Enveja",
+            "santaBarbara" : "Santa Barbara",
+            "ulldecona" : "Ulldecona"
+        },
+        "baixEbre" : "Baix Ebre",
+        "municipisBaixEbre" : {
+            "aldea" : "L'Aldea",
+            "aldover" : "Aldover",
+            "alfara" : "Alfara de Carles",
+            "ametlla" : "L'Ametlla de Mar",
+            "ampolla" : "L'Ampolla",
+            "camarles" : "Camarles",
+            "deltebre" : "Deltebre",
+            "perello" : "El Perelló",
+            "roquetes" : "Roquetes",
+            "tortosa" : "Tortosa"
+        },
+        "baixMaestrat" : "Baix Maestrat",
+        "municipisBaixMaestrat" : {
+            "alcala" : "Alcalà de Xivert",
+            "benicarlo" : "Benicarló",
+            "calig" : "Càlig",
+            "canet" : "Canet lo Roig",
+            "laJana" : "La Jana",
+            "penyiscola" : "Penyiscola",
+            "rosell" : "Rossell",
+            "santJordi" : "Sant Jordi",
+            "santMateu" : "Sant Mateu",
+            "santRafelRiu" : "Sant Rafel del Riu",
+            "traiguera" : "Traiguera",
+            "vinaros" : "Vinaròs"
+        }
+
+    },
+    "cookie": {
+        "header": "Este sitio web utiliza galletas",
+        "message": "Este sitio web utiliza galletas para aseguraros que obtenéis la mejor experiencia a nuestro sitio web.",
+        "dismiss": "Descartar",
+        "allow": "Permitir las galletas        ",
+        "deny": "Denegar",
+        "link": "Más información",
+        "policy": "Política de galletas"
+    }
+}

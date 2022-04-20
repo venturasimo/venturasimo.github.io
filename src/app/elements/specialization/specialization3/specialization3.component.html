@@ -1,0 +1,59 @@
+<div class="section-full bg-white ">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <div class="container-fluid">
+    
+        <div class="section-content">
+
+          <div class="row">
+              <div class="col-md-6 bg-cover wt-half-left-outer" style="background-image:url(assets/images/banner/half-part.jpg)">
+                <div class="wt-half-left">
+
+                            <div class="wt-media">
+                                <img src="assets/images/machine.png" alt="">
+                            </div>
+
+                    </div> 
+                </div>
+                <div class="col-md-6 wt-half-right-outer m-t50 bg-gray">                       
+              <div class="wt-half-right p-a50 p-l50 p-r0">
+                        <!-- TITLE START -->
+                        <div class="section-head text-left">
+                            <h4 class="text-primary text-uppercase wt-title-small">{{sectionData.section_title}}</h4>
+                            <h2 class="text-uppercase font-45 font-weight-500 m-b5">{{sectionData.section_heading}}</h2>
+                            <p>{{sectionData.section_description}}</p>
+                        </div>
+                        <!-- TITLE END -->                              
+                         <div class="row">
+                    
+                            <div class="col-md-4 col-sm-4" *ngFor = "let item of sectionData.items">
+                                <div class="m-b30 text-black wt-icon-box-wraper center">
+                                    <div class="counter font-40 font-weight-600 m-b5  text-primary"  [CountTo]="item.count" [from]="10" [duration]="item.duration">{{item.count}}</div>
+                                    <h4>{{item.title}}</h4>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="col-md-4 col-sm-4">
+                                <div class="m-b30 text-black wt-icon-box-wraper center">
+                                    <div class="counter font-40 font-weight-600 m-b5 text-primary">300</div>
+                                    <h4>HAPPY CLIENTS</h4>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="col-md-4 col-sm-4">
+                                <div class="m-b30 text-black wt-icon-box-wraper center">
+                                    <div class="counter font-40 font-weight-600 m-b5  text-primary">750</div>
+                                    <h4>WORKERS EMPLOYED</h4>
+                                </div>
+                            </div>   -->                          
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </ng-template>  
+</div>   

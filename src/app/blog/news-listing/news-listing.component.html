@@ -1,0 +1,70 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+        
+  <!-- SECTION CONTENT START -->
+        <div class="section-full small-device  p-tb80 bg-white">
+        
+            <!-- GALLERY CONTENT START -->
+              <div class="container">
+                <div class="news-listing ">
+                        <!-- COLUMNS 1 -->
+                         <div class="blog-post blog-md date-style-1 blog-list-1 clearfix  m-b60 bg-white"  *ngFor = "let item of news_listing_section">
+                            <div class="wt-post-media wt-img-effect zoom-slow">
+                                <a routerLink="/{{item.read_more_link}}"><img src="assets/images/blog/default/{{item.blog_image}}" alt=""></a>
+                            </div>
+                            <div class="wt-post-info p-a20 bg-white">
+                                <div class="wt-post-meta ">
+                                    <ul>
+                                        <li class="post-date" [innerHTML]="item.post_date"></li>
+                                        <li class="post-author"><i class="fa fa-user"></i><a href="javascript:void(0);">By <span>{{item.post_author}}</span></a> </li>
+                                        <li class="post-comment"><i class="fa fa fa-comments"></i><a href="javascript:void(0);">{{item.comments}} <span>Comment</span></a> </li>                                                
+                                    </ul>
+                                </div>                                        
+                                <div class="wt-post-title ">
+                                    <h3 class="post-title"><a routerLink="/{{item.read_more_link}}"  class=" font-weight-600 m-t0">{{item.post_title}}</a></h3>
+                                </div>
+                                <div class="wt-post-text">
+                                    <p>{{item.description}}</p> 
+                                </div>
+                                <a routerLink="/{{item.read_more_link}}"  class="btn-half site-button site-btn-effect button-md"><span>{{item.read_more_text}}</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination m-tb0">
+                       <li><a href="#">«</a></li>
+                       <li><a href="#">1</a></li>
+                       <li><a href="#">2</a></li>
+                       <li><a href="#">3</a></li>
+                       <li><a href="#">4</a></li>
+                       <li><a href="#">5</a></li>
+                       <li><a href="#">»</a></li>
+                    </ul>
+            </div>
+            <!-- GALLERY CONTENT END -->
+        
+        </div>
+        <!-- SECTION CONTENT END  -->
+
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+
+    <!-- BUTTON TOP START -->
+<app-scroll-to-top></app-scroll-to-top>
+    
+</div>
+
+<!-- LOADING AREA START ===== -->
+<app-loading></app-loading>

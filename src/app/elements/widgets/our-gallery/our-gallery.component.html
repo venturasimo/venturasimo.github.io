@@ -1,0 +1,18 @@
+<div class="widget widget_gallery mfp-gallery">
+  <ng-template ngFor let-sectionData [ngForOf]="data">
+    <h4 class="widget-title text-uppercase font-weight-600">{{sectionData.section_title}}</h4>
+    <!-- <div class="owl-carousel widget-gallery p-t10"> -->
+    
+        <owl-carousel-o [options]="customOptions" class="owl-carousel-1 widget-gallery-1 p-t10">
+          <ng-template carouselSlide *ngFor = "let item of sectionData.items">
+              <!-- COLUMNS 1 --> 
+            <div class="item">
+                <div class="wt-post-thum">
+                    <a href="assets/images/gallery/{{item.image}}" class="mfp-link" ><img src="assets/images/gallery/thumb/{{item.image}}" alt=""></a>
+                </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+    <!-- </div> -->
+  </ng-template>  
+</div>   
