@@ -1,57 +1,20 @@
-name: Angular GitHub CI
+name: Build and Deploy
 on:
   push:
     branches:
       - main
-
 jobs:
-  ci:
+  build:
+
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [8.5]
-
     steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          # caching node_modules
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Build
-        run: |
-          npm run build --prod
-
-      - name: Commit files
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git commit -m "Deploy venturasimo" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: venturasimo/venturasimo.github.io
-          branch: main
-          force: true
-          directory: dist
-          
+    - uses: actions/checkout@v2
+    - name: All things angular
+      uses: jfermat/angular-deploy-gh-pages-actions
+      with:
+        github_access_token: ${{ secrets.ACCESS_TOKEN_PUBLICAR }}
+        base_href: /  
+        deploy_repo: venturasimo/venturasimo.github.io
+        deploy_branch: main 
+        angular_dist_build_folder: dist/
