@@ -32,7 +32,18 @@
         "correuElectronic" : "ventura85@gmail.com",
         "adreca" : "Adreça",
         "adrecaCarrer" : "C/Enrique Granados, 25 2-A",
-        "adrecaPoblacio" : "43530 - Alcanar (Tarragona)"
+        "adrecaPoblacio" : "43530 - Alcanar (Tarragona)",
+        "formulari" : {
+            "titol" : "Posis en contacte amb nosaltres",
+            "nom" : "Nom",
+            "email" : "Correu electrònic",
+            "missatge" : "Escriu-nos un missatge.",
+            "enviarMissatge" : "Enviar missatge",
+            "error" : {
+                "titol" : "Error a l'enviar el missatge",
+                "missatge" : "En aquest moment no s'ha pogut enviar el missatge. Provi de nou dintre d'una estona. Si l'error persiteix contacti per telefon o correu electònic."
+            }
+        }
     },
     "peu" : {
         "titol" : "Realitzem construccions i reformes a:",

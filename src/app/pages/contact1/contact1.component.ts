@@ -1,6 +1,7 @@
 import * as L from 'leaflet';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ToastrService } from 'ngx-toastr';
 
 const iconRetinaUrl = 'assets/marker-icon-2x.png';
 const iconUrl = 'assets/marker-icon.png';
@@ -13,7 +14,7 @@ const shadowUrl = 'assets/marker-shadow.png';
 })
 export class Contact1Component implements OnInit, AfterViewInit {
 
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService, private toastr: ToastrService) {
     
   }
 
@@ -57,9 +58,19 @@ export class Contact1Component implements OnInit, AfterViewInit {
 
     tiles.addTo(this.map);
 
-    const marker = L.marker([40.54004, 0.47642], this.icon).addTo(this.map);
-    marker.bindPopup("<b>Ventura Simó</b><br>C/Enrique Granados, 25 2-A<br>43530 - Alcanar").openPopup();
+    let nom = this.translateService.instant('venturaSimo');
+    let adrecaCarrer = this.translateService.instant('contacte.adrecaCarrer');
+    let adrecaPoblacio = this.translateService.instant('contacte.adrecaPoblacio');
 
+    let adrecaFormatada = "<b>" + nom + "</b><br>" + adrecaCarrer + "<br>" + adrecaPoblacio;
+    const marker = L.marker([40.54004, 0.47642], this.icon).addTo(this.map);
+    marker.bindPopup(adrecaFormatada).openPopup();
+
+
+  }
+
+  sendMessage() {
+    this.toastr.error(this.translateService.instant('contacte.formulari.error.missatge'), this.translateService.instant('contacte.formulari.error.titol'));
   }
 
 }

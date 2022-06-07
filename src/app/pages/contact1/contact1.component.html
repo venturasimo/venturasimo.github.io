@@ -11,11 +11,6 @@
           <app-banner1 [data]="banner"></app-banner1>
           <!-- INNER PAGE BANNER END -->
            
-          <div class="map-container" style="height: 500px;">
-            <div class="map-frame">
-              <div id="map"></div>
-            </div>
-          </div>
           <!-- SECTION CONTENTG START -->
           <div class="section-full small-device  p-tb80">
               <div class="section-content overlay-wraper bg-repeat bg-primary overflow-hide" style="background-image:url(assets/images/background/bg7.png);">
@@ -29,25 +24,25 @@
                                       
                                           <!-- TITLE START -->
                                           <div class="section-head text-left">
-                                              <h2 class="text-uppercase font-weight-900 m-b5">Get In Touch</h2>
+                                              <h2 class="text-uppercase font-weight-900 m-b5">{{ 'contacte.formulari.titol' | translate}}</h2>
                                           </div>
                                           <!-- TITLE END -->  
                                                                           
                                           <div class="form-group">
-                                              <input name="username" type="text" required class="form-control" placeholder="Name">
+                                              <input name="username" type="text" required class="form-control" placeholder="{{ 'contacte.formulari.nom' | translate}}">
                                           </div>
                                      
                                           <div class="form-group">
-                                              <input name="email" type="text" class="form-control" required placeholder="Email">
+                                              <input name="email" type="text" class="form-control" required placeholder="{{ 'contacte.formulari.email' | translate}}">
                                           </div>
                                      
                                           <div class="form-group">
-                                              <textarea name="message" rows="4" class="form-control " required placeholder="Message"></textarea>
+                                              <textarea name="message" rows="4" class="form-control " required placeholder="{{ 'contacte.formulari.missatge' | translate}}"></textarea>
                                           </div>
                                       
                                           <div class="text-left">
-                                              <button name="submit" type="submit" value="Submit" class="site-button site-btn-effect button-lg">
-                                                      Submit
+                                              <button name="submit" type="submit" value="{{ 'contacte.formulari.enviarMissatge' | translate}}" class="site-button site-btn-effect button-lg" (click)="sendMessage()">
+                                                {{ 'contacte.formulari.enviarMissatge' | translate}}
                                               </button>
                                           </div>
   
@@ -94,6 +89,12 @@
                   </div>
                   
          </div>
+
+         <div class="map-container" style="height: 500px;">
+            <div class="map-frame">
+              <div id="map"></div>
+            </div>
+          </div>
        
           <!-- SECTION CONTENT END -->
           

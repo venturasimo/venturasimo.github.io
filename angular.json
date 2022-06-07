@@ -38,7 +38,8 @@
               "src/assets/plugins/revolution/revolution/css/settings.css", 
               "src/assets/plugins/revolution/revolution/css/navigation.css",
               "node_modules/leaflet/dist/leaflet.css",
-              "node_modules/cookieconsent/build/cookieconsent.min.css"
+              "node_modules/cookieconsent/build/cookieconsent.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
                   "src/assets/js/jquery-1.12.4.min.js",

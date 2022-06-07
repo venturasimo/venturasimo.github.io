@@ -77,6 +77,7 @@ import { OurGalleryComponent } from './elements/widgets/our-gallery/our-gallery.
 import { TagComponent } from './elements/widgets/tag/tag.component';
 import { AllElementsComponent } from './pages/all-elements/all-elements.component';
 import {NgcCookieConsentModule} from 'ngx-cookieconsent';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -153,6 +154,7 @@ import {NgcCookieConsentModule} from 'ngx-cookieconsent';
     HttpClientModule,
     CarouselModule,
     CountToModule,
+    ToastrModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
