@@ -27,7 +27,18 @@
         "infoContacte" : "Información de contacto",
         "numeroTelefon" : "Número de telefono",
         "adrecaCorreuElectronic" : "Dirección de correo electronico",
-        "adreca" : "Dirección"
+        "adreca" : "Dirección",
+        "formulari" : {
+            "titol" : "Ponte en contacto con nosotros",
+            "nom" : "Nombre",
+            "email" : "Correo electrónico",
+            "missatge" : "Escríbenos un mensaje.",
+            "enviarMissatge" : "Enviar mensaje",
+            "error" : {
+                "titol" : "Error al enviar el mensaje",
+                "missatge" : "En este momento no se ha podido enviar el mensaje. Pruebe de nuevo dentro de un rato. Si persiste el error contáctenos mediante teléfono o correo electrónico."
+            }
+        }
     },
     "peu" : {
         "titol" : "Realizamos construcciones y reformas en:",
