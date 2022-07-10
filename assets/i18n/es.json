@@ -1,4 +1,8 @@
 {
+    "pagina" : {
+        "titol" : "Ventura Simó - Reformas para el hogar",
+        "descripcio" : "Empresa especializada a las reformas para el hogar."
+    },
     "venturaSimo" : "Ventura Simó",
     "inici" : "Inicio",
     "home" : {
@@ -7,7 +11,7 @@
         "items" : {
             "01" : {
                 "titol": "Nuestra experiencia nos avala",
-                "descripcio" : "Los más de quince años al mundo de la construcción nos avalan."
+                "descripcio" : "Más de quince años al mundo de la construcción nos avalan."
             },
             "02" : {
                 "titol": "Asesoría sobre su reforma",
@@ -36,7 +40,7 @@
             "enviarMissatge" : "Enviar mensaje",
             "error" : {
                 "titol" : "Error al enviar el mensaje",
-                "missatge" : "En este momento no se ha podido enviar el mensaje. Pruebe de nuevo dentro de un rato. Si persiste el error contáctenos mediante teléfono o correo electrónico."
+                "missatge" : "El servicio de mensajería web se encuentra temporalmente fuera de servicio. Puede contactarnos mediante teléfono o correo electrónico."
             }
         }
     },
@@ -76,15 +80,14 @@
             "traiguera" : "Traiguera",
             "vinaros" : "Vinaroz"
         }
-
     },
     "cookie": {
-        "header": "Galetes utilitzades al lloc web!",
-        "message": "Aquest lloc web utilitza galetes per assegurar-vos que obteniu la millor experiència al nostre lloc web.",
-        "dismiss": "Ho tinc!",
-        "allow": "Permet galetes",
-        "deny": "Declina",
-        "link": "Més informació",
-        "policy": "Política de galetes"
+        "header": "Este sitio web utiliza galletas",
+        "message": "Este sitio web utiliza galletas para aseguraros que obtenéis la mejor experiencia a nuestro sitio web.",
+        "dismiss": "Descartar",
+        "allow": "Permitir las galletas        ",
+        "deny": "Denegar",
+        "link": "Más información",
+        "policy": "Política de galletas"
     }
 }

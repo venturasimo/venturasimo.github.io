@@ -1,4 +1,8 @@
 {
+    "pagina" : {
+        "titol" : "Ventura Simó - Reformes per a la llar",
+        "descripcio" : "Empresa especialitzada a les reformes per la llar."
+    },
     "venturaSimo" : "Ventura Simó",
     "inici" : "Inici",
     "home" : {
@@ -7,7 +11,7 @@
         "items" : {
             "01" : {
                 "titol": "La nostra experiència ens avala",
-                "descripcio" : "Els més de quinze anys al món de la construcció ens avalen."
+                "descripcio" : "Més de quinze anys al món de la construcció ens avalen."
             },
             "02" : {
                 "titol": "Assessoria sobre la seva reforma",
@@ -27,9 +31,9 @@
         "contactar" : "Contactar",
         "infoContacte" : "Informació de contacte",
         "numeroTelefon" : "Número de telèfon",
-        "telefon" : "699 99 00 11",
+        "telefon" : "699 91 03 61",
         "adrecaCorreuElectronic" : "Adreça de correu electrònic",
-        "correuElectronic" : "ventura85@gmail.com",
+        "correuElectronic" : "venturasimo85@gmail.com",
         "adreca" : "Adreça",
         "adrecaCarrer" : "C/Enrique Granados, 25 2-A",
         "adrecaPoblacio" : "43530 - Alcanar (Tarragona)",
@@ -41,7 +45,7 @@
             "enviarMissatge" : "Enviar missatge",
             "error" : {
                 "titol" : "Error a l'enviar el missatge",
-                "missatge" : "En aquest moment no s'ha pogut enviar el missatge. Provi de nou dins d'una estona. Si persisteix l'error contacti'ns mitjançant telèfon o correu electrònic."
+                "missatge" : "El servei de missatgeria web es troba temporalment fora de servei. Pot contactar-nos mitjançant telèfon o correu electrònic."
             }
         }
     },
@@ -93,12 +97,12 @@
 
     },
     "cookie": {
-        "header": "Este sitio web utiliza galletas",
-        "message": "Este sitio web utiliza galletas para aseguraros que obtenéis la mejor experiencia a nuestro sitio web.",
-        "dismiss": "Descartar",
-        "allow": "Permitir las galletas        ",
-        "deny": "Denegar",
-        "link": "Más información",
-        "policy": "Política de galletas"
+        "header": "Galetes utilitzades al lloc web!",
+        "message": "Aquest lloc web utilitza galetes per assegurar-vos que obteniu la millor experiència al nostre lloc web.",
+        "dismiss": "Ho tinc!",
+        "allow": "Permet galetes",
+        "deny": "Declina",
+        "link": "Més informació",
+        "policy": "Política de galetes"
     }
 }
